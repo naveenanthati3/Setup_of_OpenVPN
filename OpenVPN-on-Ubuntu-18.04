@@ -1,0 +1,13 @@
+# update the machine
+sudo apt update
+
+# install the openvpn on your machine
+sudo apt install -y openvpn
+
+# for setup the openvpn server we need to install Easy-rsa also by this we will generate the ca in you ca machine which used to generate
+#key files and sign those files to access the internet safely through vpn
+wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz
+
+#extract the tar ball
+cd ~
+tar xvf EasyRSA-3.0.4.tgz
